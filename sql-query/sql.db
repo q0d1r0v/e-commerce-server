@@ -1,0 +1,18 @@
+CREATE DATABASE e_commerce;
+
+\C e_commerce;
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    fullname TEXT NOT NULL,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE products(
+    id SERIAL PRIMARY KEY,
+    product_name TEXT NOT NULL,
+    product_type TEXT NOT NULL,
+    product_additional TEXT NOT NULL,
+    product_image_url TEXT NOT NULL
+);
