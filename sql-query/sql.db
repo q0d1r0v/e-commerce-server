@@ -12,6 +12,7 @@ CREATE TABLE users(
 CREATE TABLE products(
     id SERIAL PRIMARY KEY,
     product_name TEXT NOT NULL,
+    product_price TEXT NOT NULL,
     product_type TEXT NOT NULL,
     product_additional TEXT NOT NULL,
     product_image_url TEXT NOT NULL

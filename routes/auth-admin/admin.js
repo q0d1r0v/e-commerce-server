@@ -21,9 +21,7 @@ router.post("/login/", (req, res) => {
             }
         })
     } else {
-        res.send(401, {
-            message: "incorrect username or password"
-        })
+        res.sendStatus(401)
     }
 })
 
